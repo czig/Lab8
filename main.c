@@ -33,14 +33,14 @@ void main(void) {
     		__delay_cycles(1000);
     	}
 
-    	if (getCenterSensor() > 0x3AA)
+    	if (getCenterSensor() > 0x33A)
     	{
     		stopRobot();
     		__delay_cycles(10000);
     		turnRobotLeft();
-    		__delay_cycles(500000);
+    		__delay_cycles(400000);
     		stopRobot();
-    		__delay_cycles(10000);
+    		__delay_cycles(1000);
     	}
 
     }
