@@ -1,6 +1,6 @@
 /************************************
  * Author: C2C Caleb Ziegler
- * Date: 7 DEC 13
+ * Date: 12 DEC 13
  * Description: Uses right wall
  * following to make robot navigate
  * maze.
@@ -10,9 +10,8 @@
 #include "motor.h"
 #include "sensor.h"
 
-/*
- * main.c
- */
+
+
 void main(void) {
     WDTCTL = WDTPW | WDTHOLD;	// Stop watchdog timer
 

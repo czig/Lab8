@@ -58,12 +58,16 @@ void stopRobot(void);
 
 //Lab 8 new part
 
+//Moves the left wheel forward at 39% duty cycle
 void moveLeftWheelForwardSlowly(void);
 
+//Moves right wheel forward at 39% duty cycle
 void moveRightWheelForwardSlowly(void);
 
+//Uses moveLeftWheelForward and moveRightWheelForwardSlowly to cause the robot to slowly veer to the right
 void veerRobotRight();
 
+//Uses moveRightWheelForward and moveLeftWheelForwardSlowly to cause the robot to slowly veer to the left
 void veerRobotLeft();
 
 

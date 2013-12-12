@@ -138,7 +138,7 @@ void moveLeftWheelForwardSlowly(void)
 {
 	TA0CTL &= ~(MC1|MC0);
 	TA0CCR0 = 100; //Define period as 100
-	TA0CCR1 = 39; //Defines 20% duty cycle when uses with OUTMOD_7 (reset/set)
+	TA0CCR1 = 39; //Defines 39% duty cycle when uses with OUTMOD_7 (reset/set)
 	TA0CCTL0 &= ~(OUTMOD_4|OUTMOD_5); //Clears bits in OUTMOD so no errors when writing a new mode(only modes 4 and 5 used for first pin)
 	TA0CCTL1 &= ~(OUTMOD_7|OUTMOD_5); //Same thing but clears modes 7 and 5 because they are the only ones used on the second pin
 	TA0CCTL0 |= OUTMOD_5;         //Reset mode for ground on P1.1
@@ -151,7 +151,7 @@ void moveRightWheelForwardSlowly(void)
 {
 	TA1CTL &= ~(MC1|MC0);
 	TA1CCR0 = 100; //Define period as 100
-	TA1CCR1 = 39; //Defines 20% duty cycle when uses with OUTMOD_7 (reset/set)
+	TA1CCR1 = 39; //Defines 39% duty cycle when uses with OUTMOD_7 (reset/set)
 	TA1CCTL0 &= ~(OUTMOD_4|OUTMOD_5);
 	TA1CCTL1 &= ~(OUTMOD_7|OUTMOD_5);
 	TA1CCTL0 |= OUTMOD_5;        //Reset mode for ground on P2.0
