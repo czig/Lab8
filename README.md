@@ -7,7 +7,7 @@ This repository includes the files main.c, motor.h, motor.c, sensor.h, and senso
 
 ##Grading
 
- - Prelab....................... 10
+ - Prelab....................... 11
  - Required Functionality....... 40
  - B-Functionality.............. 10
  - A-Functionality.............. 10
